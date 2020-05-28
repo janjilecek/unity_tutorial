@@ -66,10 +66,10 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   earthPreset:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   sphericalMode:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
   seaLevel:
     m_OverrideState: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
     min: 0
   planetCenterPosition:
     m_OverrideState: 0
-    m_Value: {x: 0, y: -6378100, z: 0}
+    m_Value: {x: 0, y: 5000, z: 0}
   airDensityR:
     m_OverrideState: 0
     m_Value: 0.04534
@@ -107,28 +107,28 @@ MonoBehaviour:
     m_Value: 55261.973
     min: 0
   aerosolDensity:
-    m_OverrideState: 0
-    m_Value: 0.01192826
+    m_OverrideState: 1
+    m_Value: 0.929
     min: 0
     max: 1
   aerosolTint:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {r: 0.9, g: 0.9, b: 0.9, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
   aerosolMaximumAltitude:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 8289.296
     min: 0
   aerosolAnisotropy:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.37
     min: -1
     max: 1
   numberOfBounces:
     m_OverrideState: 0
-    m_Value: 8
+    m_Value: 9
     min: 1
     max: 10
   groundTint:
@@ -148,8 +148,8 @@ MonoBehaviour:
     m_Value: 1
     min: 0
   planetRotation:
-    m_OverrideState: 0
-    m_Value: {x: 0, y: 0, z: 0}
+    m_OverrideState: 1
+    m_Value: {x: 102.2, y: 9.69, z: 0}
   spaceEmissionTexture:
     m_OverrideState: 0
     m_Value: {fileID: 0}
@@ -159,7 +159,7 @@ MonoBehaviour:
     min: 0
   spaceRotation:
     m_OverrideState: 0
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 88.11, y: 4787, z: 0}
   colorSaturation:
     m_OverrideState: 0
     m_Value: 1
@@ -176,8 +176,8 @@ MonoBehaviour:
     min: 0
     max: 1
   horizonTint:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_OverrideState: 1
+    m_Value: {r: 0.9622642, g: 0, b: 0, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 0
@@ -188,8 +188,8 @@ MonoBehaviour:
     showAlpha: 0
     showEyeDropper: 0
   horizonZenithShift:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: -0.36
     min: -1
     max: 1
 --- !u!114 &7449269637143898756
@@ -230,8 +230,8 @@ MonoBehaviour:
   active: 1
   m_AdvancedMode: 0
   enabled:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   colorMode:
     m_OverrideState: 0
     m_Value: 1
@@ -269,7 +269,7 @@ MonoBehaviour:
     m_Value: 0
   maximumHeight:
     m_OverrideState: 0
-    m_Value: 50
+    m_Value: 430.6
   albedo:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -277,12 +277,12 @@ MonoBehaviour:
     showAlpha: 1
     showEyeDropper: 1
   meanFreePath:
-    m_OverrideState: 0
-    m_Value: 400
+    m_OverrideState: 1
+    m_Value: 406.82
     min: 1
   enableVolumetricFog:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 1
   anisotropy:
     m_OverrideState: 0
     m_Value: 0
