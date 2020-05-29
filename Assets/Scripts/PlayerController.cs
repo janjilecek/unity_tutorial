@@ -6,6 +6,58 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    
+    
+    
+    public abstract class Command
+    {
+        public abstract void Execute();
+    }
+
+    public class JumpFunction : Command
+    {
+        public override void Execute()
+        {
+            Jump();
+        }
+    }
+
+    public class TelekinesisFunction : Command
+    {
+        public override void Execute()
+        {
+            Telekinesis();
+        }
+    }
+
+
+    public static void Telekinesis()
+    {
+        
+    }
+
+    public static void Jump()
+    {
+        
+    }
+
+    public static void DoMove()
+    {
+        Command keySpace = new JumpFunction();
+        Command keyX = new TelekinesisFunction();
+        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            keySpace.Execute();
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            keyX.Execute();
+        }
+    }
+    
+    
     public CharacterController characterController;
     public float speed = 3;
     
@@ -61,5 +113,9 @@ public class PlayerController : MonoBehaviour
         characterController.Move(speed * Time.deltaTime * move + gravityMove * Time.deltaTime);
         
         animator.SetBool("isWalking", verticalMove != 0 || horizontalMove != 0);
+
+        
+        
+        
     }
 }
